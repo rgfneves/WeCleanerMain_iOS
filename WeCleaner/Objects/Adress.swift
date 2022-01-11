@@ -8,12 +8,6 @@
 import Foundation
 struct Adress: Codable {
     
-    var name: String?
-    var cellphone: String?
-    var number: String?
-    var extra: String?
-    var email: String?
-    
     var cep: String?
     var logradouro: String?
     var bairro: String?

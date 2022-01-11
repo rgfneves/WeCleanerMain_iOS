@@ -228,8 +228,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="cellphoneTextDidChange:" destination="Bak-PW-uVg" eventType="editingChanged" id="5v6-cb-EvX"/>
-                                    <action selector="cellphoneTextDidChange:" destination="IRf-hM-BMN" eventType="editingDidEnd" id="H3P-UU-T4p"/>
+                                    <action selector="mobileTextDidChange:" destination="IRf-hM-BMN" eventType="editingChanged" id="cKy-3n-39y"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MUG-n4-yuA">
@@ -272,8 +271,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="cepTextDidChange:" destination="IRf-hM-BMN" eventType="editingDidEnd" id="8OE-kH-zjQ"/>
-                                    <action selector="cepTextDidChange:" destination="Bak-PW-uVg" eventType="editingChanged" id="hHj-TF-HKJ"/>
+                                    <action selector="cepTextDidChange:" destination="IRf-hM-BMN" eventType="editingChanged" id="Uk5-We-IKp"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirma Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-m7-u0E">

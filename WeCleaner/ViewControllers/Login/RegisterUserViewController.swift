@@ -51,11 +51,46 @@ class RegisterUserViewController: UIViewController {
     }
     @IBAction func cepTextDidChange(_ sender: UITextField) {
         cep.text = Mask.format(with: "XX.XXX-XXX", phone: cep.text ?? "")
+        
+        if cep.text?.count == 10 {
+            callCepApi()
+        }
     }
-    
     
     @IBAction func registerNewUser(_ sender: UIButton) {
         checkAll()
+    }
+    
+    func callCepApi(){
+        var cepLocal = cep.text!.replacingOccurrences(of: ".", with: "", options: NSString.CompareOptions.literal, range: nil)
+        
+        cepLocal = cepLocal.replacingOccurrences(of: "-", with: "", options: NSString.CompareOptions.literal, range: nil)
+        
+        ApiViaCep.postRequest(cep: cepLocal){
+            (adress, err)  in
+            
+            if let error = err {
+                
+                print("ocorreu um erro: \(error.localizedDescription)")
+                self.showToast(message: "\(error.localizedDescription)", font: .systemFont(ofSize: 12.0))
+                
+            }else{
+                
+                DispatchQueue.main.async {
+                    
+                    self.state.text = adress?.uf
+                    self.city.text = adress?.localidade
+                    //                self.street.text = adress?.logradouro
+                    //                self.neiborhood.text = adress?.bairro
+                }
+                
+            }
+            
+        }
+        
+        
+        
+        
     }
     
     
@@ -161,7 +196,7 @@ class RegisterUserViewController: UIViewController {
             // handle the error here
         }
         
-    
+        
     }
     
     func saveLocally(user: User){

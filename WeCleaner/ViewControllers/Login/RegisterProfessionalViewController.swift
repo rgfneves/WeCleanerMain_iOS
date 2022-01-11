@@ -29,11 +29,11 @@ class RegisterProfessionalViewController: UIViewController {
     
     @IBOutlet weak var neiborhood: UITextField!
     
-        
+    
     @IBOutlet weak var street: UITextField!
     
     @IBOutlet weak var complement: UITextField!
-        
+    
     @IBOutlet weak var password: UITextField!
     
     @IBOutlet weak var confirmPassword: UITextField!
@@ -56,12 +56,14 @@ class RegisterProfessionalViewController: UIViewController {
         
     }
     
+
+
     
-    @IBAction func cellphoneTextDidChange(_ sender: UITextField) {
-        
+    @IBAction func mobileTextDidChange(_ sender: Any) {
         cellphone.text = Mask.format(with: "(XX) XXXXX-XXXX", phone: cellphone.text ?? "")
-        
     }
+    
+    
     
     @IBAction func cpfTextDidChange(_ sender: UITextField) {
         cpf.text = Mask.format(with: "XXX.XXX.XXX-XX", phone: cpf.text ?? "")
@@ -73,11 +75,48 @@ class RegisterProfessionalViewController: UIViewController {
     
     @IBAction func cepTextDidChange(_ sender: UITextField) {
         cep.text = Mask.format(with: "XX.XXX-XXX", phone: cep.text ?? "")
+       
+        if cep.text?.count == 10 {
+            callCepApi()
+        }
     }
-    
+
     
     @IBAction func registerNewUser(_ sender: UIButton) {
         checkAll()
+    }
+    
+    
+    func callCepApi(){
+        var cepLocal = cep.text!.replacingOccurrences(of: ".", with: "", options: NSString.CompareOptions.literal, range: nil)
+        
+        cepLocal = cepLocal.replacingOccurrences(of: "-", with: "", options: NSString.CompareOptions.literal, range: nil)
+        
+        ApiViaCep.postRequest(cep: cepLocal){
+            (adress, err)  in
+            
+            if let error = err {
+                
+                print("ocorreu um erro: \(error.localizedDescription)")
+                self.showToast(message: "\(error.localizedDescription)", font: .systemFont(ofSize: 12.0))
+                
+            }else{
+                
+                DispatchQueue.main.async {
+                    
+                    self.state.text = adress?.uf
+                    self.city.text = adress?.localidade
+                    self.street.text = adress?.logradouro
+                    self.neiborhood.text = adress?.bairro
+                }
+                
+            }
+            
+        }
+        
+        
+        
+        
     }
     
     
@@ -145,7 +184,7 @@ class RegisterProfessionalViewController: UIViewController {
         }
         
         createMoipUser()
-    //    createFirebaseUser()
+        //    createFirebaseUser()
         
         
         
@@ -156,9 +195,9 @@ class RegisterProfessionalViewController: UIViewController {
         
         
     }
-
-
-
+    
+    
+    
     func createFirebaseUser(){
         
         
@@ -215,7 +254,7 @@ class RegisterProfessionalViewController: UIViewController {
             // handle the error here
         }
         
-    
+        
     }
     
     func saveLocally(user: User){
