@@ -7,15 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53BADDA8278CB4B7008DD7C2 /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */; };
+		53BADDAA278CB6B5008DD7C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDA9278CB6B5008DD7C2 /* User.swift */; };
+		53BADDAC278CB7AB008DD7C2 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDAB278CB7AB008DD7C2 /* K.swift */; };
+		53BADDB1278CC63B008DD7C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDB0278CC63B008DD7C2 /* LoginViewController.swift */; };
+		53BADDB3278CEA3C008DD7C2 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDB2278CEA3C008DD7C2 /* ForgotPassViewController.swift */; };
+		53BADDB5278CF010008DD7C2 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDB4278CF010008DD7C2 /* RegisterUserViewController.swift */; };
+		53BADDB7278CF29C008DD7C2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDB6278CF29C008DD7C2 /* Utils.swift */; };
+		53BADDB9278DEDE0008DD7C2 /* RegisterProfessionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDB8278DEDE0008DD7C2 /* RegisterProfessionalViewController.swift */; };
+		53BADDBB278DF175008DD7C2 /* ApiViaCep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDBA278DF174008DD7C2 /* ApiViaCep.swift */; };
+		53BADDBD278DF1F6008DD7C2 /* Adress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDBC278DF1F6008DD7C2 /* Adress.swift */; };
 		53FCF25D278B5676002916BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF25C278B5676002916BE /* AppDelegate.swift */; };
 		53FCF25F278B5676002916BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF25E278B5676002916BE /* SceneDelegate.swift */; };
 		53FCF261278B5676002916BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF260278B5676002916BE /* ViewController.swift */; };
 		53FCF264278B5676002916BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FCF262278B5676002916BE /* Main.storyboard */; };
 		53FCF266278B5678002916BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FCF265278B5678002916BE /* Assets.xcassets */; };
 		53FCF269278B5678002916BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FCF267278B5678002916BE /* LaunchScreen.storyboard */; };
+		53FCF279278B5B14002916BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53FCF278278B5B14002916BE /* GoogleService-Info.plist */; };
+		D7D2BFA8E8DE6FFBA3E8017F /* Pods_WeCleaner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07FD9C462529D213A5CF6B4 /* Pods_WeCleaner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D6F5A31678ABEB2281562B0 /* Pods-WeCleaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCleaner.release.xcconfig"; path = "Target Support Files/Pods-WeCleaner/Pods-WeCleaner.release.xcconfig"; sourceTree = "<group>"; };
+		53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
+		53BADDA9278CB6B5008DD7C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		53BADDAB278CB7AB008DD7C2 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		53BADDB0278CC63B008DD7C2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		53BADDB2278CEA3C008DD7C2 /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		53BADDB4278CF010008DD7C2 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		53BADDB6278CF29C008DD7C2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		53BADDB8278DEDE0008DD7C2 /* RegisterProfessionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProfessionalViewController.swift; sourceTree = "<group>"; };
+		53BADDBA278DF174008DD7C2 /* ApiViaCep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViaCep.swift; sourceTree = "<group>"; };
+		53BADDBC278DF1F6008DD7C2 /* Adress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adress.swift; sourceTree = "<group>"; };
 		53FCF259278B5676002916BE /* WeCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FCF25C278B5676002916BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53FCF25E278B5676002916BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +47,9 @@
 		53FCF265278B5678002916BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53FCF268278B5678002916BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53FCF26A278B5678002916BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53FCF278278B5B14002916BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C07FD9C462529D213A5CF6B4 /* Pods_WeCleaner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeCleaner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA143983ED72BC42E9BA0956 /* Pods-WeCleaner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCleaner.debug.xcconfig"; path = "Target Support Files/Pods-WeCleaner/Pods-WeCleaner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D2BFA8E8DE6FFBA3E8017F /* Pods_WeCleaner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2072E90B783EBCCDEAD181D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA143983ED72BC42E9BA0956 /* Pods-WeCleaner.debug.xcconfig */,
+				0D6F5A31678ABEB2281562B0 /* Pods-WeCleaner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		53BADDAD278CBA2D008DD7C2 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		53FCF250278B5676002916BE = {
 			isa = PBXGroup;
 			children = (
 				53FCF25B278B5676002916BE /* WeCleaner */,
 				53FCF25A278B5676002916BE /* Products */,
+				2072E90B783EBCCDEAD181D1 /* Pods */,
+				F32EB43AF407974548D11834 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +101,99 @@
 		53FCF25B278B5676002916BE /* WeCleaner */ = {
 			isa = PBXGroup;
 			children = (
-				53FCF25C278B5676002916BE /* AppDelegate.swift */,
 				53FCF25E278B5676002916BE /* SceneDelegate.swift */,
+				53FCF25C278B5676002916BE /* AppDelegate.swift */,
+				53FCF277278B57A0002916BE /* Models */,
+				53FCF276278B5799002916BE /* Objects */,
+				53FCF275278B5767002916BE /* Firebase */,
+				53FCF271278B56F8002916BE /* ViewControllers */,
+				53FCF270278B56D4002916BE /* Views */,
+				53FCF278278B5B14002916BE /* GoogleService-Info.plist */,
 				53FCF260278B5676002916BE /* ViewController.swift */,
-				53FCF262278B5676002916BE /* Main.storyboard */,
 				53FCF265278B5678002916BE /* Assets.xcassets */,
-				53FCF267278B5678002916BE /* LaunchScreen.storyboard */,
 				53FCF26A278B5678002916BE /* Info.plist */,
 			);
 			path = WeCleaner;
+			sourceTree = "<group>";
+		};
+		53FCF270278B56D4002916BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53FCF262278B5676002916BE /* Main.storyboard */,
+				53FCF267278B5678002916BE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53FCF271278B56F8002916BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				53FCF274278B574E002916BE /* Login */,
+				53FCF273278B5745002916BE /* Professional */,
+				53FCF272278B573B002916BE /* Client */,
+				53BADDAD278CBA2D008DD7C2 /* Cart */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		53FCF272278B573B002916BE /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		53FCF273278B5745002916BE /* Professional */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Professional;
+			sourceTree = "<group>";
+		};
+		53FCF274278B574E002916BE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				53BADDB0278CC63B008DD7C2 /* LoginViewController.swift */,
+				53BADDB2278CEA3C008DD7C2 /* ForgotPassViewController.swift */,
+				53BADDB4278CF010008DD7C2 /* RegisterUserViewController.swift */,
+				53BADDB8278DEDE0008DD7C2 /* RegisterProfessionalViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		53FCF275278B5767002916BE /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		53FCF276278B5799002916BE /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				53BADDA9278CB6B5008DD7C2 /* User.swift */,
+				53BADDBC278DF1F6008DD7C2 /* Adress.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		53FCF277278B57A0002916BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53BADDAB278CB7AB008DD7C2 /* K.swift */,
+				53BADDB6278CF29C008DD7C2 /* Utils.swift */,
+				53BADDBA278DF174008DD7C2 /* ApiViaCep.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F32EB43AF407974548D11834 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07FD9C462529D213A5CF6B4 /* Pods_WeCleaner.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53FCF26D278B5678002916BE /* Build configuration list for PBXNativeTarget "WeCleaner" */;
 			buildPhases = (
+				1F9C4929799BAE9FAD36AD3D /* [CP] Check Pods Manifest.lock */,
 				53FCF255278B5676002916BE /* Sources */,
 				53FCF256278B5676002916BE /* Frameworks */,
 				53FCF257278B5676002916BE /* Resources */,
+				DA41F59B0FA5393FC8F430BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53FCF269278B5678002916BE /* LaunchScreen.storyboard in Resources */,
+				53FCF279278B5B14002916BE /* GoogleService-Info.plist in Resources */,
 				53FCF266278B5678002916BE /* Assets.xcassets in Resources */,
 				53FCF264278B5676002916BE /* Main.storyboard in Resources */,
 			);
@@ -133,14 +265,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F9C4929799BAE9FAD36AD3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeCleaner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA41F59B0FA5393FC8F430BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeCleaner/Pods-WeCleaner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeCleaner/Pods-WeCleaner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeCleaner/Pods-WeCleaner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		53FCF255278B5676002916BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BADDB3278CEA3C008DD7C2 /* ForgotPassViewController.swift in Sources */,
+				53BADDBB278DF175008DD7C2 /* ApiViaCep.swift in Sources */,
+				53BADDB5278CF010008DD7C2 /* RegisterUserViewController.swift in Sources */,
+				53BADDB1278CC63B008DD7C2 /* LoginViewController.swift in Sources */,
 				53FCF261278B5676002916BE /* ViewController.swift in Sources */,
+				53BADDA8278CB4B7008DD7C2 /* FirebaseData.swift in Sources */,
+				53BADDB7278CF29C008DD7C2 /* Utils.swift in Sources */,
+				53BADDBD278DF1F6008DD7C2 /* Adress.swift in Sources */,
 				53FCF25D278B5676002916BE /* AppDelegate.swift in Sources */,
+				53BADDAC278CB7AB008DD7C2 /* K.swift in Sources */,
+				53BADDAA278CB6B5008DD7C2 /* User.swift in Sources */,
 				53FCF25F278B5676002916BE /* SceneDelegate.swift in Sources */,
+				53BADDB9278DEDE0008DD7C2 /* RegisterProfessionalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +468,7 @@
 		};
 		53FCF26E278B5678002916BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA143983ED72BC42E9BA0956 /* Pods-WeCleaner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +497,7 @@
 		};
 		53FCF26F278B5678002916BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D6F5A31678ABEB2281562B0 /* Pods-WeCleaner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

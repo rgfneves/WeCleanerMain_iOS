@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>362897256559-clt5pmkrvl2pm9401k2p2vnea9t00nnu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.362897256559-clt5pmkrvl2pm9401k2p2vnea9t00nnu</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>362897256559-dhftkjtdj19172gd587h6gvvtblr0j6p.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBpEoK7dTVOYmNSaLf4T0cs_9ojhBBgVWY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>362897256559</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.nevesdev.WeCleaner</string>
+	<key>PROJECT_ID</key>
+	<string>wecleaner-87c5e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wecleaner-87c5e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:362897256559:ios:7a909099ac570c3d665d9a</string>
+</dict>
+</plist>
