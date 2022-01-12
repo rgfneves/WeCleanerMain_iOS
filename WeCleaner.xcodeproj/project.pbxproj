@@ -18,6 +18,10 @@
 		53BADDBB278DF175008DD7C2 /* ApiViaCep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDBA278DF174008DD7C2 /* ApiViaCep.swift */; };
 		53BADDBD278DF1F6008DD7C2 /* Adress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDBC278DF1F6008DD7C2 /* Adress.swift */; };
 		53BADDBF278E0081008DD7C2 /* MySecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDBE278E0081008DD7C2 /* MySecrets.swift */; };
+		53BADDC1278E0B4F008DD7C2 /* ApiMoip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDC0278E0B4E008DD7C2 /* ApiMoip.swift */; };
+		53BADDC3278E1D86008DD7C2 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDC2278E1D86008DD7C2 /* ApiResponse.swift */; };
+		53BADDC5278E41FD008DD7C2 /* GeneralInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDC4278E41FC008DD7C2 /* GeneralInputs.swift */; };
+		53BADDC7278E5165008DD7C2 /* UserAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDC6278E5164008DD7C2 /* UserAgreementViewController.swift */; };
 		53FCF25D278B5676002916BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF25C278B5676002916BE /* AppDelegate.swift */; };
 		53FCF25F278B5676002916BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF25E278B5676002916BE /* SceneDelegate.swift */; };
 		53FCF261278B5676002916BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF260278B5676002916BE /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 		53BADDBA278DF174008DD7C2 /* ApiViaCep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViaCep.swift; sourceTree = "<group>"; };
 		53BADDBC278DF1F6008DD7C2 /* Adress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adress.swift; sourceTree = "<group>"; };
 		53BADDBE278E0081008DD7C2 /* MySecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySecrets.swift; sourceTree = "<group>"; };
+		53BADDC0278E0B4E008DD7C2 /* ApiMoip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMoip.swift; sourceTree = "<group>"; };
+		53BADDC2278E1D86008DD7C2 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		53BADDC4278E41FC008DD7C2 /* GeneralInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInputs.swift; sourceTree = "<group>"; };
+		53BADDC6278E5164008DD7C2 /* UserAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementViewController.swift; sourceTree = "<group>"; };
 		53FCF259278B5676002916BE /* WeCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FCF25C278B5676002916BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53FCF25E278B5676002916BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +119,6 @@
 				53FCF271278B56F8002916BE /* ViewControllers */,
 				53FCF270278B56D4002916BE /* Views */,
 				53FCF278278B5B14002916BE /* GoogleService-Info.plist */,
-				53FCF260278B5676002916BE /* ViewController.swift */,
 				53FCF265278B5678002916BE /* Assets.xcassets */,
 				53FCF26A278B5678002916BE /* Info.plist */,
 			);
@@ -130,6 +137,7 @@
 		53FCF271278B56F8002916BE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				53FCF260278B5676002916BE /* ViewController.swift */,
 				53FCF274278B574E002916BE /* Login */,
 				53FCF273278B5745002916BE /* Professional */,
 				53FCF272278B573B002916BE /* Client */,
@@ -159,6 +167,7 @@
 				53BADDB2278CEA3C008DD7C2 /* ForgotPassViewController.swift */,
 				53BADDB4278CF010008DD7C2 /* RegisterUserViewController.swift */,
 				53BADDB8278DEDE0008DD7C2 /* RegisterProfessionalViewController.swift */,
+				53BADDC6278E5164008DD7C2 /* UserAgreementViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -176,6 +185,8 @@
 			children = (
 				53BADDA9278CB6B5008DD7C2 /* User.swift */,
 				53BADDBC278DF1F6008DD7C2 /* Adress.swift */,
+				53BADDC2278E1D86008DD7C2 /* ApiResponse.swift */,
+				53BADDC4278E41FC008DD7C2 /* GeneralInputs.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -187,6 +198,7 @@
 				53BADDB6278CF29C008DD7C2 /* Utils.swift */,
 				53BADDBA278DF174008DD7C2 /* ApiViaCep.swift */,
 				53BADDBE278E0081008DD7C2 /* MySecrets.swift */,
+				53BADDC0278E0B4E008DD7C2 /* ApiMoip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,15 +332,19 @@
 				53BADDB5278CF010008DD7C2 /* RegisterUserViewController.swift in Sources */,
 				53BADDB1278CC63B008DD7C2 /* LoginViewController.swift in Sources */,
 				53FCF261278B5676002916BE /* ViewController.swift in Sources */,
+				53BADDC3278E1D86008DD7C2 /* ApiResponse.swift in Sources */,
+				53BADDC5278E41FD008DD7C2 /* GeneralInputs.swift in Sources */,
 				53BADDA8278CB4B7008DD7C2 /* FirebaseData.swift in Sources */,
 				53BADDB7278CF29C008DD7C2 /* Utils.swift in Sources */,
 				53BADDBD278DF1F6008DD7C2 /* Adress.swift in Sources */,
 				53FCF25D278B5676002916BE /* AppDelegate.swift in Sources */,
 				53BADDBF278E0081008DD7C2 /* MySecrets.swift in Sources */,
+				53BADDC7278E5165008DD7C2 /* UserAgreementViewController.swift in Sources */,
 				53BADDAC278CB7AB008DD7C2 /* K.swift in Sources */,
 				53BADDAA278CB6B5008DD7C2 /* User.swift in Sources */,
 				53FCF25F278B5676002916BE /* SceneDelegate.swift in Sources */,
 				53BADDB9278DEDE0008DD7C2 /* RegisterProfessionalViewController.swift in Sources */,
+				53BADDC1278E0B4F008DD7C2 /* ApiMoip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@ import Foundation
 struct K {
     struct FirebaseCollections {
         static let USERS = "users"
+        static let GENERAL_INPUTS = "generalInputs"
     }
     
     

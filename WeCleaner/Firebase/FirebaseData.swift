@@ -27,7 +27,7 @@ class FirebaseData {
     static let sharedData = FirebaseData()
     
     var userList = [User]()
-    
+    var generalInputs = GeneralInputs()
     
     
     
@@ -92,6 +92,44 @@ class FirebaseData {
                         }
                         
                         self.userList = userList
+                        
+                        completion(nil)
+                        
+                    }
+                }
+            }
+    }
+    
+    
+    
+    // MARK: - LoadGeneralInputs
+    func loadGeneralInputsUserAgree(completion: @escaping (Error?) -> Void) {
+        
+        
+        db.collection(K.FirebaseCollections.GENERAL_INPUTS)
+            .addSnapshotListener { (querySnapshot, error) in
+                
+       
+                if let e = error {
+                    print("\n\n\nThere was an issue retrieving data from Firestore. \(e)\n\n\n")
+                    completion(e)
+                    return
+                    
+                } else {
+                    if let snapshotDocuments = querySnapshot?.documents {
+                        for doc in snapshotDocuments {
+                            
+                            let data = doc.data()
+                            var generalInputs = GeneralInputs()
+         
+                            generalInputs.userAgreement = data["userAgreement"] as? String
+                
+                            self.generalInputs = generalInputs
+                            
+                            completion(nil)
+                        }
+                        
+                        
                         
                         completion(nil)
                         

@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     var timer = Timer()
+
     
     
     override func viewDidLoad() {
@@ -37,7 +38,7 @@ class LoginViewController: UIViewController {
         // decide if it is user or professional
         
         checkCurrentUser()
-        
+     
         
         
         
@@ -86,6 +87,7 @@ class LoginViewController: UIViewController {
         
     }
     
+   
     func saveUserAndGo(){
         
         
@@ -142,6 +144,7 @@ class LoginViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         timer.invalidate()
+
     }
     
     

@@ -211,7 +211,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cadastrar"/>
                                 <connections>
-                                    <action selector="registerNewUser:" destination="Bak-PW-uVg" eventType="touchUpInside" id="6hc-BB-qyM"/>
                                     <action selector="registerNewUser:" destination="IRf-hM-BMN" eventType="touchUpInside" id="yBZ-sP-Ki8"/>
                                 </connections>
                             </button>
@@ -237,26 +236,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TZc-ih-EOi">
-                                <rect key="frame" x="154" y="507" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rua" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cHw-v8-BXk">
-                                <rect key="frame" x="154" y="549" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Complemento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uce-TJ-Ac4">
-                                <rect key="frame" x="154" y="591" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="Moip" translatesAutoresizingMaskIntoConstraints="NO" id="Ycz-XM-KHY">
                                 <rect key="frame" x="179" y="700" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="WeCleaner" translatesAutoresizingMaskIntoConstraints="NO" id="vPf-su-0Z5">
+                                <rect key="frame" x="179" y="735" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="knQ-pC-6Ed">
@@ -286,10 +271,39 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="WeCleaner" translatesAutoresizingMaskIntoConstraints="NO" id="vPf-su-0Z5">
-                                <rect key="frame" x="179" y="735" width="49" height="31"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LvM-iG-Bjw">
+                                <rect key="frame" x="277" y="591" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Complemento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="154-YQ-2Z5">
+                                <rect key="frame" x="55" y="591" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rua" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-n2-9KJ">
+                                <rect key="frame" x="271" y="549" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDd-Y0-Mb6">
+                                <rect key="frame" x="271" y="507" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FJ-pM-XYh">
+                                <rect key="frame" x="145" y="813" width="145" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Termos de Serviço"/>
+                                <connections>
+                                    <segue destination="Ri7-CG-AwA" kind="presentation" id="4xU-QK-gAH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9HR-1X-5Ci"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -298,24 +312,54 @@
                     <connections>
                         <outlet property="acceptedMoipAgreements" destination="vPf-su-0Z5" id="90L-mu-ZTr"/>
                         <outlet property="acceptedUserAgreements" destination="Ycz-XM-KHY" id="LjW-1B-LWK"/>
+                        <outlet property="addressComp" destination="154-YQ-2Z5" id="tfN-8c-lqv"/>
                         <outlet property="birth" destination="Ldf-zT-bgo" id="aBm-1L-1Eu"/>
                         <outlet property="cellphone" destination="aOu-4e-u5n" id="fea-cO-ycy"/>
                         <outlet property="cep" destination="BeN-m3-hud" id="iKh-we-3Tc"/>
                         <outlet property="city" destination="MUG-n4-yuA" id="GOP-4Z-U3U"/>
-                        <outlet property="complement" destination="uce-TJ-Ac4" id="iXp-FQ-Ayc"/>
                         <outlet property="confirmPassword" destination="oYy-m7-u0E" id="vmY-KH-yd4"/>
                         <outlet property="cpf" destination="Cmp-OP-u8M" id="aJK-G6-ZcM"/>
                         <outlet property="email" destination="h2l-tL-fyZ" id="aVs-1H-u2b"/>
                         <outlet property="name" destination="iGv-Vo-DaU" id="Rwg-Bh-LHP"/>
-                        <outlet property="neiborhood" destination="TZc-ih-EOi" id="Xez-Xx-02Z"/>
+                        <outlet property="neiborhood" destination="dDd-Y0-Mb6" id="YfF-oS-zq9"/>
                         <outlet property="password" destination="Itk-VB-ydj" id="VWt-Ch-cmm"/>
                         <outlet property="state" destination="knQ-pC-6Ed" id="Zlb-Fp-Dw4"/>
-                        <outlet property="street" destination="cHw-v8-BXk" id="NGm-IX-ULF"/>
+                        <outlet property="street" destination="6S7-n2-9KJ" id="Wfr-hA-Wf2"/>
+                        <outlet property="streetNumber" destination="LvM-iG-Bjw" id="jpM-lB-cC0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sG-aC-Fu1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2580" y="-1002"/>
+        </scene>
+        <!--User Agreement View Controller-->
+        <scene sceneID="m8C-SU-xYB">
+            <objects>
+                <viewController id="Ri7-CG-AwA" customClass="UserAgreementViewController" customModule="WeCleaner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NmL-vX-5iw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Oaf-9z-flL">
+                                <rect key="frame" x="67" y="89" width="284" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nuE-fc-PX3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="userAgreeTextField" destination="Oaf-9z-flL" id="9aA-vB-h2Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kuc-xT-lBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3582.608695652174" y="-675"/>
         </scene>
         <!--Register User View Controller-->
         <scene sceneID="bI2-mL-Bfx">
@@ -393,6 +437,15 @@
                                 <rect key="frame" x="95" y="722" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlW-0X-9uG">
+                                <rect key="frame" x="124" y="793" width="145" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Termos de Serviço"/>
+                                <connections>
+                                    <segue destination="Ri7-CG-AwA" kind="presentation" id="Jh6-4E-foI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cIT-4g-kmG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -415,7 +468,13 @@
             <point key="canvasLocation" x="2580" y="-314"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jh6-4E-foI"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

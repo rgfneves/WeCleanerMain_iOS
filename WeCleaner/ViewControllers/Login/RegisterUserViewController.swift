@@ -163,10 +163,17 @@ class RegisterUserViewController: UIViewController {
     
     func saveUserToDataBase(){
         
+//        let address = street.text + ", " + streetNumber.text + ", " + com.text.toString() + ", " +
+//                                        binding.editTextDistrict.text.toString() + ", " +
+//                                        binding.editTextCity.text.toString() + ", " +
+//                                        binding.editTextState.text.toString() + ", " +
+//                                        binding.editTextCEP.text.toString()
+//
+        let myUuid = UUID().uuidString
         
         
         let userInfoDictionary = [
-            "id" : UUID().uuidString,
+            "id" : myUuid,
             "name" : name.text!,
             "email" : email.text!,
             "cellphone" : cellphone.text!,
@@ -174,6 +181,7 @@ class RegisterUserViewController: UIViewController {
             "city" : city.text!,
             "reward" : "0",
             "typeName" : "USER",
+            "acceptedUserAgreement" : "true"
         ]
         
         
@@ -181,7 +189,7 @@ class RegisterUserViewController: UIViewController {
         let db = Firestore.firestore() // 1
         
         do { // 2
-            try db.collection(K.FirebaseCollections.USERS).document(userInfoDictionary["id"]!).setData(userInfoDictionary)
+            try db.collection(K.FirebaseCollections.USERS).document(myUuid).setData(userInfoDictionary)
             
             var user = User()
             user.id = userInfoDictionary["id"]!
@@ -193,7 +201,7 @@ class RegisterUserViewController: UIViewController {
             user.reward = "0"
             saveLocally(user: user)
         } catch {
-            // handle the error here
+           print(error)
         }
         
         
