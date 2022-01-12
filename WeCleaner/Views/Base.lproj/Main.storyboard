@@ -304,6 +304,15 @@
                                     <segue destination="Ri7-CG-AwA" kind="presentation" id="4xU-QK-gAH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT6-Rg-xaR">
+                                <rect key="frame" x="152" y="78" width="53" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Foto"/>
+                                <connections>
+                                    <action selector="takePic:" destination="IRf-hM-BMN" eventType="touchUpInside" id="Nmj-hr-t3n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9HR-1X-5Ci"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

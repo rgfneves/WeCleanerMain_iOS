@@ -9,7 +9,7 @@ import Firebase
 import FirebaseDatabase
 import UIKit
 
-class RegisterProfessionalViewController: UIViewController {
+class RegisterProfessionalViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var name: UITextField!
     
@@ -43,14 +43,16 @@ class RegisterProfessionalViewController: UIViewController {
     
     @IBOutlet weak var acceptedMoipAgreements: UISwitch!
     
+    var imagePicker: UIImagePickerController!
 
     let defaults = UserDefaults.standard
     
     var user = User()
     
+    
     //TODO: quedstáo da foto
     var photoToSaveUrl = ""
-    
+    let myUuid = UUID().uuidString
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -323,7 +325,7 @@ class RegisterProfessionalViewController: UIViewController {
     
     func saveUserToDataBase(){
         
-        let myUuid = UUID().uuidString
+       
         
         
         let userInfoDictionary = [
@@ -406,14 +408,60 @@ class RegisterProfessionalViewController: UIViewController {
         
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    @IBAction func takePic(_ sender: UIButton) {
+        selectImageFrom()
+    }
     
+    
+    func selectImageFrom(){
+        imagePicker =  UIImagePickerController()
+        imagePicker.delegate = self
+
+            imagePicker.sourceType = .camera
+    
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func saveImageFirebase(img1 :UIImage!){
+       
+        let storage = Storage.storage()
+        
+        let storageRef = storage.reference()
+        
+        let data = img1.jpegData(compressionQuality: 0.8)! as Data
+
+        // Create a reference to the file you want to upload
+        let riversRef = storageRef.child("pictures/\(myUuid)")
+
+        // Upload the file to the path "images/rivers.jpg"
+        let uploadTask = riversRef.putData(data, metadata: nil) { (metadata, error) in
+          guard let metadata = metadata else {
+            // Uh-oh, an error occurred!
+            return
+          }
+        
+          riversRef.downloadURL { (url, error) in
+            if let downloadURL = url {
+              print(downloadURL)
+                self.photoToSaveUrl = downloadURL.absoluteString
+              return
+            }
+          }
+        }
+        
+    }
+    
+    
+}
+
+extension RegisterProfessionalViewController: UIImagePickerControllerDelegate{
+
+   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
+       imagePicker.dismiss(animated: true, completion: nil)
+       guard let selectedImage = info[.originalImage] as? UIImage else {
+           print("Image not found!")
+           return
+       }
+       saveImageFirebase(img1: selectedImage)
+   }
 }
