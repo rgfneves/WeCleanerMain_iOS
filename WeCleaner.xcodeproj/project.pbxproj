@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		537759B5278F57CC00635EDC /* ClientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759B4278F57CC00635EDC /* ClientHomeViewController.swift */; };
+		537759B7278F6BFE00635EDC /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759B6278F6BFE00635EDC /* LoginProtocols.swift */; };
 		53BADDA8278CB4B7008DD7C2 /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */; };
 		53BADDAA278CB6B5008DD7C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDA9278CB6B5008DD7C2 /* User.swift */; };
 		53BADDAC278CB7AB008DD7C2 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDAB278CB7AB008DD7C2 /* K.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		0D6F5A31678ABEB2281562B0 /* Pods-WeCleaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCleaner.release.xcconfig"; path = "Target Support Files/Pods-WeCleaner/Pods-WeCleaner.release.xcconfig"; sourceTree = "<group>"; };
+		537759B4278F57CC00635EDC /* ClientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomeViewController.swift; sourceTree = "<group>"; };
+		537759B6278F6BFE00635EDC /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
 		53BADDA9278CB6B5008DD7C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		53BADDAB278CB7AB008DD7C2 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 		53FCF272278B573B002916BE /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				537759B4278F57CC00635EDC /* ClientHomeViewController.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				53BADDBA278DF174008DD7C2 /* ApiViaCep.swift */,
 				53BADDBE278E0081008DD7C2 /* MySecrets.swift */,
 				53BADDC0278E0B4E008DD7C2 /* ApiMoip.swift */,
+				537759B6278F6BFE00635EDC /* LoginProtocols.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,7 +334,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BADDB3278CEA3C008DD7C2 /* ForgotPassViewController.swift in Sources */,
+				537759B7278F6BFE00635EDC /* LoginProtocols.swift in Sources */,
 				53BADDBB278DF175008DD7C2 /* ApiViaCep.swift in Sources */,
+				537759B5278F57CC00635EDC /* ClientHomeViewController.swift in Sources */,
 				53BADDB5278CF010008DD7C2 /* RegisterUserViewController.swift in Sources */,
 				53BADDB1278CC63B008DD7C2 /* LoginViewController.swift in Sources */,
 				53FCF261278B5676002916BE /* ViewController.swift in Sources */,

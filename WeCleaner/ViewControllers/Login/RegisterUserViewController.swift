@@ -226,6 +226,9 @@ class RegisterUserViewController: UIViewController {
         defaults.set(user.setPassword ?? "", forKey: K.defaultsKeys.setPassword)
         
         //TODO: open main activity
+//        print("AQUIII ")
+//        self.dismiss(animated: true, completion: nil)
+//     //   self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
         
     }
     

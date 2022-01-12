@@ -44,6 +44,10 @@ class RegisterProfessionalViewController: UIViewController, UINavigationControll
     @IBOutlet weak var acceptedMoipAgreements: UISwitch!
     
     var imagePicker: UIImagePickerController!
+    
+    @IBOutlet weak var registerView: UIStackView!
+    
+    
 
     let defaults = UserDefaults.standard
     
@@ -93,7 +97,7 @@ class RegisterProfessionalViewController: UIViewController, UINavigationControll
 
     
     @IBAction func registerNewUser(_ sender: UIButton) {
-        checkAll()
+        checkEmail()
     }
     
     
@@ -126,9 +130,25 @@ class RegisterProfessionalViewController: UIViewController, UINavigationControll
         
         
         
-        
+        	
     }
     
+    func checkEmail(){
+        
+        Auth.auth().fetchSignInMethods(forEmail: email.text ?? ""){
+            (string, error) in
+            
+            if(string == nil){
+                self.checkAll()
+            }else{
+                self.showToast(message: "Contate o administrador", font: .systemFont(ofSize: 12.0))
+            }
+          //  print(error)
+            
+            
+        }
+    //    checkAll()
+    }
     
     func checkAll(){
         
@@ -434,8 +454,8 @@ class RegisterProfessionalViewController: UIViewController, UINavigationControll
         let riversRef = storageRef.child("pictures/\(myUuid)")
 
         // Upload the file to the path "images/rivers.jpg"
-        let uploadTask = riversRef.putData(data, metadata: nil) { (metadata, error) in
-          guard let metadata = metadata else {
+        _ = riversRef.putData(data, metadata: nil) { (metadata, error) in
+            guard metadata != nil else {
             // Uh-oh, an error occurred!
             return
           }
@@ -444,6 +464,7 @@ class RegisterProfessionalViewController: UIViewController, UINavigationControll
             if let downloadURL = url {
               print(downloadURL)
                 self.photoToSaveUrl = downloadURL.absoluteString
+                self.registerView.isHidden = false
               return
             }
           }

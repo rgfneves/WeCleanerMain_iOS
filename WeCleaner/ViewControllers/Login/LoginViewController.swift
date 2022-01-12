@@ -9,7 +9,19 @@ import FirebaseStorage
 import SDWebImage
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, OpenClientController, OpenProfessionalController {
+    
+    func openClientController() {
+        actualOpenClientController()
+        
+    }
+    
+    func openProfessionalController() {
+        actualOpenProfessionalController()
+        
+    }
+    
+    
     
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -18,7 +30,7 @@ class LoginViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     var timer = Timer()
-
+    
     
     
     override func viewDidLoad() {
@@ -37,8 +49,9 @@ class LoginViewController: UIViewController {
         //save user info in prefs
         // decide if it is user or professional
         
-        checkCurrentUser()
-     
+        //TODO: get back
+      //  checkCurrentUser()
+        
         
         
         
@@ -87,7 +100,7 @@ class LoginViewController: UIViewController {
         
     }
     
-   
+    
     func saveUserAndGo(){
         
         
@@ -107,10 +120,33 @@ class LoginViewController: UIViewController {
         defaults.set(FirebaseData.sharedData.userList[0].cellphone, forKey: K.defaultsKeys.mobile)
         defaults.set(FirebaseData.sharedData.userList[0].setPassword, forKey: K.defaultsKeys.setPassword)
         
-        // TODO: read type and go
         
-     //   print(FirebaseData.sharedData.userList[0].typeName)
+        if FirebaseData.sharedData.userList[0].typeName ?? "" == "USER"{
+            openClientController()
+        }else{
+            openProfessionalController()
+        }
         
+        
+    }
+    func actualOpenProfessionalController(){
+               
+//
+//            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//            if let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ProfessionalHomeViewController") as? ProfessionalHomeViewController {
+//                self.present(viewController, animated: true, completion: nil)
+//            }
+       
+        
+    }
+    func actualOpenClientController(){
+               
+     
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            if let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ClientHomeViewController") as? ClientHomeViewController {
+                self.present(viewController, animated: true, completion: nil)
+            }
+       
         
     }
     
@@ -144,7 +180,7 @@ class LoginViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         timer.invalidate()
-
+        
     }
     
     

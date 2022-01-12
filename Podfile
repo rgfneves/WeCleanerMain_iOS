@@ -13,6 +13,7 @@ target 'WeCleaner' do
   pod 'Firebase/Storage'
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Auth'
+  pod 'SideMenu'
   
   # Add the Firebase pod for Google Analytics
   # pod 'Firebase/Analytics'

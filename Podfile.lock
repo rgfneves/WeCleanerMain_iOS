@@ -475,6 +475,7 @@ PODS:
   - SDWebImage (5.12.2):
     - SDWebImage/Core (= 5.12.2)
   - SDWebImage/Core (5.12.2)
+  - SideMenu (6.5.0)
   - SWXMLHash (6.0.0)
 
 DEPENDENCIES:
@@ -486,6 +487,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - IQKeyboardManagerSwift
   - SDWebImage (~> 5.0)
+  - SideMenu
   - SWXMLHash
 
 SPEC REPOS:
@@ -512,6 +514,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - SDWebImage
+    - SideMenu
     - SWXMLHash
 
 SPEC CHECKSUMS:
@@ -537,8 +540,9 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SWXMLHash: 9d851ed3edf48ec2bd0db98f0cda0ad4136d75e3
 
-PODFILE CHECKSUM: 6980e15e8d7329db705f62d71a2d23e554c1e45f
+PODFILE CHECKSUM: 226274685134acada8b190e0008509099a46ff99
 
 COCOAPODS: 1.11.2
