@@ -50,7 +50,7 @@ class LoginViewController: UIViewController, OpenClientController, OpenProfessio
         // decide if it is user or professional
         
         //TODO: get back
-      //  checkCurrentUser()
+        checkCurrentUser()
         
         
         
@@ -140,12 +140,36 @@ class LoginViewController: UIViewController, OpenClientController, OpenProfessio
         
     }
     func actualOpenClientController(){
-               
-     
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            if let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ClientHomeViewController") as? ClientHomeViewController {
-                self.present(viewController, animated: true, completion: nil)
-            }
+        
+//        let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "ClientHomeViewController") as! ClientHomeViewController
+//        let navController = UINavigationController(rootViewController: VC1) // Creating a navigation controller with VC1 at the root of the navigation stack.
+//        self.present(navController, animated:true, completion: nil)
+        
+//
+        
+ //       opçao atual
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "clientNavigationViewController") as! UINavigationController
+//        self.present(vc, animated: true, completion: nil)
+        
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ClientHomeViewController") as! ClientHomeViewController
+//        let navigationController = UINavigationController(rootViewController: nextViewController)
+     //   let appdelegate = UIApplication.shared.delegate as! AppDelegate
+     //   appdelegate.window!.rootViewController = navigationController
+        
+        
+        let story = UIStoryboard(name: "Main", bundle:nil)
+        let vc = story.instantiateViewController(withIdentifier: "ContainerClientViewController") as! ContainerClientViewController
+        UIApplication.shared.windows.first?.rootViewController = vc
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+//
+//
+        
+//            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//            if let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ClientHomeViewController") as? ClientHomeViewController {
+//                self.present(viewController, animated: true, completion: nil)
+//            }
        
         
     }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		537759B5278F57CC00635EDC /* ClientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759B4278F57CC00635EDC /* ClientHomeViewController.swift */; };
 		537759B7278F6BFE00635EDC /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759B6278F6BFE00635EDC /* LoginProtocols.swift */; };
+		537759BE27909A6000635EDC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759BD27909A6000635EDC /* Protocols.swift */; };
+		537759C227909D6F00635EDC /* ContainerClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759C127909D6F00635EDC /* ContainerClientViewController.swift */; };
 		53BADDA8278CB4B7008DD7C2 /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */; };
 		53BADDAA278CB6B5008DD7C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDA9278CB6B5008DD7C2 /* User.swift */; };
 		53BADDAC278CB7AB008DD7C2 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDAB278CB7AB008DD7C2 /* K.swift */; };
@@ -24,6 +26,9 @@
 		53BADDC3278E1D86008DD7C2 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDC2278E1D86008DD7C2 /* ApiResponse.swift */; };
 		53BADDC5278E41FD008DD7C2 /* GeneralInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDC4278E41FC008DD7C2 /* GeneralInputs.swift */; };
 		53BADDC7278E5165008DD7C2 /* UserAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDC6278E5164008DD7C2 /* UserAgreementViewController.swift */; };
+		53EA85C22790A2BC001A6760 /* MenuClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA85C12790A2BC001A6760 /* MenuClientController.swift */; };
+		53EA85C42790AE92001A6760 /* MyTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA85C32790AE92001A6760 /* MyTicketsViewController.swift */; };
+		53EA85C62790FCA4001A6760 /* ClosedDealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA85C52790FCA4001A6760 /* ClosedDealsViewController.swift */; };
 		53FCF25D278B5676002916BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF25C278B5676002916BE /* AppDelegate.swift */; };
 		53FCF25F278B5676002916BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF25E278B5676002916BE /* SceneDelegate.swift */; };
 		53FCF261278B5676002916BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FCF260278B5676002916BE /* ViewController.swift */; };
@@ -38,6 +43,8 @@
 		0D6F5A31678ABEB2281562B0 /* Pods-WeCleaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCleaner.release.xcconfig"; path = "Target Support Files/Pods-WeCleaner/Pods-WeCleaner.release.xcconfig"; sourceTree = "<group>"; };
 		537759B4278F57CC00635EDC /* ClientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomeViewController.swift; sourceTree = "<group>"; };
 		537759B6278F6BFE00635EDC /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		537759BD27909A6000635EDC /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		537759C127909D6F00635EDC /* ContainerClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerClientViewController.swift; sourceTree = "<group>"; };
 		53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
 		53BADDA9278CB6B5008DD7C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		53BADDAB278CB7AB008DD7C2 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
@@ -53,6 +60,9 @@
 		53BADDC2278E1D86008DD7C2 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		53BADDC4278E41FC008DD7C2 /* GeneralInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInputs.swift; sourceTree = "<group>"; };
 		53BADDC6278E5164008DD7C2 /* UserAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementViewController.swift; sourceTree = "<group>"; };
+		53EA85C12790A2BC001A6760 /* MenuClientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuClientController.swift; sourceTree = "<group>"; };
+		53EA85C32790AE92001A6760 /* MyTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsViewController.swift; sourceTree = "<group>"; };
+		53EA85C52790FCA4001A6760 /* ClosedDealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedDealsViewController.swift; sourceTree = "<group>"; };
 		53FCF259278B5676002916BE /* WeCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FCF25C278B5676002916BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53FCF25E278B5676002916BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				537759B4278F57CC00635EDC /* ClientHomeViewController.swift */,
+				537759C127909D6F00635EDC /* ContainerClientViewController.swift */,
+				53EA85C12790A2BC001A6760 /* MenuClientController.swift */,
+				53EA85C32790AE92001A6760 /* MyTicketsViewController.swift */,
+				53EA85C52790FCA4001A6760 /* ClosedDealsViewController.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -205,6 +219,7 @@
 				53BADDBE278E0081008DD7C2 /* MySecrets.swift */,
 				53BADDC0278E0B4E008DD7C2 /* ApiMoip.swift */,
 				537759B6278F6BFE00635EDC /* LoginProtocols.swift */,
+				537759BD27909A6000635EDC /* Protocols.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -338,19 +353,24 @@
 				53BADDBB278DF175008DD7C2 /* ApiViaCep.swift in Sources */,
 				537759B5278F57CC00635EDC /* ClientHomeViewController.swift in Sources */,
 				53BADDB5278CF010008DD7C2 /* RegisterUserViewController.swift in Sources */,
+				53EA85C62790FCA4001A6760 /* ClosedDealsViewController.swift in Sources */,
 				53BADDB1278CC63B008DD7C2 /* LoginViewController.swift in Sources */,
 				53FCF261278B5676002916BE /* ViewController.swift in Sources */,
 				53BADDC3278E1D86008DD7C2 /* ApiResponse.swift in Sources */,
 				53BADDC5278E41FD008DD7C2 /* GeneralInputs.swift in Sources */,
+				537759BE27909A6000635EDC /* Protocols.swift in Sources */,
 				53BADDA8278CB4B7008DD7C2 /* FirebaseData.swift in Sources */,
 				53BADDB7278CF29C008DD7C2 /* Utils.swift in Sources */,
 				53BADDBD278DF1F6008DD7C2 /* Adress.swift in Sources */,
 				53FCF25D278B5676002916BE /* AppDelegate.swift in Sources */,
+				537759C227909D6F00635EDC /* ContainerClientViewController.swift in Sources */,
+				53EA85C22790A2BC001A6760 /* MenuClientController.swift in Sources */,
 				53BADDBF278E0081008DD7C2 /* MySecrets.swift in Sources */,
 				53BADDC7278E5165008DD7C2 /* UserAgreementViewController.swift in Sources */,
 				53BADDAC278CB7AB008DD7C2 /* K.swift in Sources */,
 				53BADDAA278CB6B5008DD7C2 /* User.swift in Sources */,
 				53FCF25F278B5676002916BE /* SceneDelegate.swift in Sources */,
+				53EA85C42790AE92001A6760 /* MyTicketsViewController.swift in Sources */,
 				53BADDB9278DEDE0008DD7C2 /* RegisterProfessionalViewController.swift in Sources */,
 				53BADDC1278E0B4F008DD7C2 /* ApiMoip.swift in Sources */,
 			);

@@ -226,9 +226,15 @@ class RegisterUserViewController: UIViewController {
         defaults.set(user.setPassword ?? "", forKey: K.defaultsKeys.setPassword)
         
         //TODO: open main activity
-//        print("AQUIII ")
-//        self.dismiss(animated: true, completion: nil)
-//     //   self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "clientNavigationViewController") as! UINavigationController
+        self.present(vc, animated: true, completion: nil)
+//
+//        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        if let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ClientHomeViewController") as? ClientHomeViewController {
+//            self.present(viewController, animated: true, completion: nil)
+//        }
         
     }
     
