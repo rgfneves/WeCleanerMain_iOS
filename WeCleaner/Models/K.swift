@@ -8,8 +8,28 @@
 import Foundation
 
 struct K {
+    
+    struct ClosedDeals {
+    static let OPEN = "OPEN"
+    static let EXECUTED = "EXECUTED"
+    static let CANCELLED_CUSTOMER_OPEN = "CANCELLED_CUSTOMER_OPEN"
+    static let CANCELLED_CUSTOMER_CLOSED = "CANCELLED_CUSTOMER_CLOSED"
+    static let CANCELLED_PROFESSIONAL_OPEN = "CANCELLED_PROFESSIONAL_OPEN"
+    static let CANCELLED_PROFESSIONAL_CLOSED = "CANCELLED_PROFESSIONAL_CLOSED"
+    static let REFUND_CUSTOMER_OPEN = "REFUND_CUSTOMER_OPEN"
+    static let REFUND_CUSTOMER_CLOSED = "REFUND_CUSTOMER_CLOSED"
+        
+        
+        static let PAYED_BY_CUSTOMER = "PAYED_BY_CUSTOMER"
+        static let REFUND_COMPLETE = "REFUND_COMPLETE"
+        static let WAITING_CONFIRMATION = "WAITING_CONFIRMATION"
+    }
+    
     struct FirebaseCollections {
         static let USERS = "users"
+        static let TICKETS = "ticket"
+        static let OFFERS = "offers"
+        static let CLOSED_DEALS = "closedDeal"
         static let GENERAL_INPUTS = "generalInputs"
     }
     

@@ -11,6 +11,12 @@
 		537759B7278F6BFE00635EDC /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759B6278F6BFE00635EDC /* LoginProtocols.swift */; };
 		537759BE27909A6000635EDC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759BD27909A6000635EDC /* Protocols.swift */; };
 		537759C227909D6F00635EDC /* ContainerClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537759C127909D6F00635EDC /* ContainerClientViewController.swift */; };
+		53B537BA2795D238009A3982 /* MyTicketsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B537B82795D238009A3982 /* MyTicketsCollectionViewCell.swift */; };
+		53B537BD2795D922009A3982 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B537BC2795D922009A3982 /* Ticket.swift */; };
+		53B537BF2796F8E8009A3982 /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B537BE2796F8E8009A3982 /* ClientModel.swift */; };
+		53B537C12797001A009A3982 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B537C027970019009A3982 /* Offer.swift */; };
+		53B537C527974122009A3982 /* ClosedDealCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B537C427974121009A3982 /* ClosedDealCollectionViewCell.swift */; };
+		53B537C72797431E009A3982 /* ClosedDeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B537C62797431E009A3982 /* ClosedDeal.swift */; };
 		53BADDA8278CB4B7008DD7C2 /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */; };
 		53BADDAA278CB6B5008DD7C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDA9278CB6B5008DD7C2 /* User.swift */; };
 		53BADDAC278CB7AB008DD7C2 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BADDAB278CB7AB008DD7C2 /* K.swift */; };
@@ -45,6 +51,12 @@
 		537759B6278F6BFE00635EDC /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		537759BD27909A6000635EDC /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		537759C127909D6F00635EDC /* ContainerClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerClientViewController.swift; sourceTree = "<group>"; };
+		53B537B82795D238009A3982 /* MyTicketsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsCollectionViewCell.swift; sourceTree = "<group>"; };
+		53B537BC2795D922009A3982 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		53B537BE2796F8E8009A3982 /* ClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
+		53B537C027970019009A3982 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		53B537C427974121009A3982 /* ClosedDealCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedDealCollectionViewCell.swift; sourceTree = "<group>"; };
+		53B537C62797431E009A3982 /* ClosedDeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedDeal.swift; sourceTree = "<group>"; };
 		53BADDA7278CB4B7008DD7C2 /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
 		53BADDA9278CB6B5008DD7C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		53BADDAB278CB7AB008DD7C2 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
@@ -95,6 +107,15 @@
 				0D6F5A31678ABEB2281562B0 /* Pods-WeCleaner.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		53B537B72795D217009A3982 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				53B537B82795D238009A3982 /* MyTicketsCollectionViewCell.swift */,
+				53B537C427974121009A3982 /* ClosedDealCollectionViewCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		53BADDAD278CBA2D008DD7C2 /* Cart */ = {
@@ -163,6 +184,7 @@
 		53FCF272278B573B002916BE /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				53B537B72795D217009A3982 /* cells */,
 				537759B4278F57CC00635EDC /* ClientHomeViewController.swift */,
 				537759C127909D6F00635EDC /* ContainerClientViewController.swift */,
 				53EA85C12790A2BC001A6760 /* MenuClientController.swift */,
@@ -206,6 +228,9 @@
 				53BADDBC278DF1F6008DD7C2 /* Adress.swift */,
 				53BADDC2278E1D86008DD7C2 /* ApiResponse.swift */,
 				53BADDC4278E41FC008DD7C2 /* GeneralInputs.swift */,
+				53B537BC2795D922009A3982 /* Ticket.swift */,
+				53B537C027970019009A3982 /* Offer.swift */,
+				53B537C62797431E009A3982 /* ClosedDeal.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -220,6 +245,7 @@
 				53BADDC0278E0B4E008DD7C2 /* ApiMoip.swift */,
 				537759B6278F6BFE00635EDC /* LoginProtocols.swift */,
 				537759BD27909A6000635EDC /* Protocols.swift */,
+				53B537BE2796F8E8009A3982 /* ClientModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -355,19 +381,25 @@
 				53BADDB5278CF010008DD7C2 /* RegisterUserViewController.swift in Sources */,
 				53EA85C62790FCA4001A6760 /* ClosedDealsViewController.swift in Sources */,
 				53BADDB1278CC63B008DD7C2 /* LoginViewController.swift in Sources */,
+				53B537C12797001A009A3982 /* Offer.swift in Sources */,
 				53FCF261278B5676002916BE /* ViewController.swift in Sources */,
 				53BADDC3278E1D86008DD7C2 /* ApiResponse.swift in Sources */,
 				53BADDC5278E41FD008DD7C2 /* GeneralInputs.swift in Sources */,
+				53B537BA2795D238009A3982 /* MyTicketsCollectionViewCell.swift in Sources */,
 				537759BE27909A6000635EDC /* Protocols.swift in Sources */,
 				53BADDA8278CB4B7008DD7C2 /* FirebaseData.swift in Sources */,
+				53B537BD2795D922009A3982 /* Ticket.swift in Sources */,
 				53BADDB7278CF29C008DD7C2 /* Utils.swift in Sources */,
+				53B537C527974122009A3982 /* ClosedDealCollectionViewCell.swift in Sources */,
 				53BADDBD278DF1F6008DD7C2 /* Adress.swift in Sources */,
 				53FCF25D278B5676002916BE /* AppDelegate.swift in Sources */,
 				537759C227909D6F00635EDC /* ContainerClientViewController.swift in Sources */,
+				53B537C72797431E009A3982 /* ClosedDeal.swift in Sources */,
 				53EA85C22790A2BC001A6760 /* MenuClientController.swift in Sources */,
 				53BADDBF278E0081008DD7C2 /* MySecrets.swift in Sources */,
 				53BADDC7278E5165008DD7C2 /* UserAgreementViewController.swift in Sources */,
 				53BADDAC278CB7AB008DD7C2 /* K.swift in Sources */,
+				53B537BF2796F8E8009A3982 /* ClientModel.swift in Sources */,
 				53BADDAA278CB6B5008DD7C2 /* User.swift in Sources */,
 				53FCF25F278B5676002916BE /* SceneDelegate.swift in Sources */,
 				53EA85C42790AE92001A6760 /* MyTicketsViewController.swift in Sources */,

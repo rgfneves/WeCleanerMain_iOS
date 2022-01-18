@@ -155,3 +155,23 @@ extension UIView {
         }
     }
 }
+
+class MyTransformations {
+   
+     static func makeCardFromView(myViewR: UIView) -> UIView {
+        
+        let myView = myViewR
+        
+        myView.layer.cornerRadius = 10.0
+        myView.layer.shadowColor = UIColor.gray.cgColor
+        myView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        myView.layer.shadowRadius = 8.0
+        myView.layer.shadowOpacity = 0.5
+        
+        return myView
+    }
+
+    
+    
+}
+
